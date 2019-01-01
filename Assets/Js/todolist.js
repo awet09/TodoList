@@ -3,13 +3,6 @@ $("li").click(function(){
     $(this).toggleClass("completed");
 });
 
-//click on X to delet todo
-// function newItem () {
-//     var todoText = $(this).val("input[type='text']");
-//       $(this).val("");
-//         //create a new li and add to ul
-//       $("ul").append("<li><span>x</span> " + todoText + "</li>")
-// }
 $("span").click(function(event){
     $(this).parent().fadeOut(500, function(){
         $(this).remove();
