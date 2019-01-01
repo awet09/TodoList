@@ -4,7 +4,12 @@ $("li").click(function(){
 });
 
 //click on X to delet todo
-
+// function newItem () {
+//     var todoText = $(this).val("input[type='text']");
+//       $(this).val("");
+//         //create a new li and add to ul
+//       $("ul").append("<li><span>x</span> " + todoText + "</li>")
+// }
 $("span").click(function(event){
     $(this).parent().fadeOut(500, function(){
         $(this).remove();
@@ -14,7 +19,6 @@ $("span").click(function(event){
 
 $("input[type='text']").keypress(function(event){
     if(event.which === 13){
-        newItem();
         //grabbing new todo text from input
       var todoText = $(this).val();
       $(this).val("");
